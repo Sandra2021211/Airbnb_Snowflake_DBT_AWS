@@ -1,0 +1,3 @@
+{
+    "dbt.dbtPythonPathOverride": "/workspaces/Airbnb_Snowflake_DBT_AWS/.venv/bin/python3"
+}
