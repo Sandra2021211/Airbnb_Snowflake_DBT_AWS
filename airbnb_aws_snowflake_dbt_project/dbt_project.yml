@@ -26,3 +26,4 @@ models:
   airbnb_aws_snowflake_dbt_project:
     bronze:
       +materialized: table
+      +schema: bronze
