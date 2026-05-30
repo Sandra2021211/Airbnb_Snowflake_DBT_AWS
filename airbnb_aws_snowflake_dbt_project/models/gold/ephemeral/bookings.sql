@@ -1,7 +1,7 @@
 {{ config(materialized='ephemeral') }}
 
 WITH bookings AS(
-    SELECT
+    SELECT DISTINCT
         BOOKING_ID,
         BOOKING_DATE,
         BOOKING_STATUS,

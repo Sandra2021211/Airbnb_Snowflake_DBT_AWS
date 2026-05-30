@@ -1,7 +1,7 @@
 {{ config(materialized='ephemeral') }}
 
 WITH hosts as(
-    SELECT
+    SELECT DISTINCT
         HOST_ID,
         HOST_NAME,
         HOST_SINCE,
