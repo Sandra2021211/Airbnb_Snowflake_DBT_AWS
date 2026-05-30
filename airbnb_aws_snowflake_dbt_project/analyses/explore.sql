@@ -1,1 +1,1 @@
-SELECT * FROM {{ ref('silver_listings') }}
+SELECT * FROM {{ ref('one_big_table') }}
