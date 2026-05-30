@@ -4,6 +4,17 @@ sources:
     schema: STAGING 
     tables:
       - name: listings
+        columns:
+          - name: listing_id
+            tests:
+              - not_null
       - name: bookings
+        columns:
+          - name: booking_id
+            tests:
+              - not_null
       - name: hosts
-
+        columns:
+          - name: host_id
+            tests:
+              - not_null
