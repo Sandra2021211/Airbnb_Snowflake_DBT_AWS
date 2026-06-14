@@ -12,8 +12,21 @@ The repo includes raw input datasets, dbt models for staged ingestion, enrichmen
 ### Data Flow
 
 ```text
-Source Data (CSV) → Snowflake Staging → Bronze Layer → Silver Layer → Gold Layer
-                                    \\                 \\                \\                \\n                                      Raw Tables      Cleaned Data      Enriched Data      Analytics Ready
+Source Data (CSV)
+        │
+        ▼
+Snowflake Staging
+        │
+        ▼
+   Bronze Layer
+        │
+        ▼
+   Silver Layer
+        │
+        ▼
+    Gold Layer
+
+Raw Tables   Cleaned Data   Enriched Data   Analytics Ready
 ```
 
 ### Technology Stack
